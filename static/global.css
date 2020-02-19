@@ -1,0 +1,193 @@
+/**
+ * Hey folks, this is our stylesheet!
+ *
+ * Fresh links:
+ * https://www.layoutgridcalculator.com/typographic-scale/
+ */
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  /* Increase or decrease the number
+to change the vertical spacing globally*/
+
+  /* Base Vertical Spacing */
+  --space: 1.6;
+
+  /* Vertical Spacing - multiplier */
+  --vspace: calc(var(--space) * 1rem);
+  --vspace-0: calc(3 * var(--space) * 1rem);
+  --vspace-1: calc(2 * var(--space) * 1rem);
+  --vspace-2: calc(1.5 * var(--space) * 1rem);
+  --vspace-3: calc(0.5 * var(--space) * 1rem);
+
+  --color-fiber: #534a45;
+  --color-candy: #f04eb8;
+  --color-candy-stripe: #76c4dd;
+  --font-display: "Libre Baskerville", serif;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  color: var(--color-fiber);
+  margin: 0;
+}
+
+html {
+  background: repeating-linear-gradient(
+    45deg,
+    #e8f0eb,
+    #e8f0eb 120px,
+    white 120px,
+    white 180px
+  );
+  width: 100%;
+  height: 100%;
+}
+
+.color-fiber {
+  color: var(--color-fiber);
+}
+
+.color-candy {
+  color: var(--color-candy);
+}
+
+.color-candy-stripe {
+  color: var(--color-candy-stripe);
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 0.875em;
+  max-width: calc(25 * var(--vspace));
+  margin: 0 auto;
+}
+
+p {
+  margin: var(--vspace) 0;
+  line-height: var(--vspace);
+}
+
+h1 {
+  margin: var(--vspace-1) 0 var(--vspace-1) 0;
+  line-height: calc(5.2917 / var(--space) * var(--vspace));
+  font-family: var(--font-display);
+}
+
+h2 {
+  margin: var(--vspace-2) 0 var(--vspace-3) 0;
+  line-height: 1em;
+  font-family: var(--font-display);
+}
+
+h3 {
+  margin: var(--vspace-1) 0 var(--vspace-3) 0;
+  line-height: 1em;
+  font-family: var(--font-display);
+}
+
+h4,
+h5,
+h6 {
+  margin: var(--vspace-2) 0 var(--vspace-3) 0;
+  line-height: var(--vspace);
+  font-family: var(--font-display);
+}
+
+.bigtitle,
+h1 {
+  font-size: 5.2917em;
+  word-break: break-word;
+  font-family: var(--font-display);
+}
+
+.title,
+h2 {
+  font-size: 2.6458em;
+  font-weight: lighter;
+  word-break: break-word;
+  font-family: var(--font-display);
+}
+
+.subheading1,
+h3 {
+  font-size: 1.75em;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: var(--font-display);
+}
+
+blockquote {
+  font-size: em;
+  font-style: italic;
+  line-height: calc(* var(--vspace));
+  margin: var(--vspace-2) var(--vspace-2);
+}
+
+.subheading2,
+h4 {
+  font-size: 1.3333em;
+  text-transform: capitalize;
+  font-family: var(--font-display);
+}
+
+.subheading3,
+h5 {
+  font-size: 1.1667em;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-family: var(--font-display);
+}
+
+.subheading4,
+h6 {
+  font-size: 1em;
+  font-weight: normal;
+  font-style: italic;
+  font-family: var(--font-display);
+  letter-spacing: 0px !important;
+}
+
+.caption_ts {
+  font-size: 0.7708em;
+  font-weight: normal;
+  font-style: italic;
+  font-family: var(--font-display);
+}
+
+.endnote_ts {
+  font-size: 0.7708em;
+  font-family: var(--font-display);
+}
+
+.footnote_ts {
+  margin: var(--vspace-0) 0 var(--vspace-2) 0;
+  font-size: 0.8em;
+  padding-top: 0.8em;
+  border-top: 1px solid #ccc;
+  line-height: 2em;
+  font-family: var(--font-display);
+}
+
+sup {
+  font-size: 0.6rem;
+  text-transform: none;
+  font-style: italic;
+  font-weight: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
