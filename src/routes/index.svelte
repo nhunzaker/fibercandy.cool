@@ -63,7 +63,7 @@
   <title>fibercandy.cool</title>
 </svelte:head>
 
-<article style="background-image: url(/green-juice.jpeg);">
+<article style="background-image: url(/green-juice.jpg);">
   <a href="/recipes/green-juice" class="Details">
     <h2 class="Title">Green Juice</h2>
     <p class="Description">

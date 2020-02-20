@@ -13,7 +13,8 @@
 <svelte:head>
   <style>
     :root {
-      --hero-background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url(/popcorn.jpg) 50% 50% / cover;
+      --body-bg: white;
+      --hero-background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), var(--color-fiber) url(/popcorn.jpg) 50% 50% / cover;
       --hero-shadow: inset 0 -1px 10px rgba(0, 0, 0, 0.24);
       --hero-padding: 128px 0 128px;
       --brand-background: white;

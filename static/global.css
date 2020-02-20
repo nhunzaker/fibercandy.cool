@@ -30,6 +30,13 @@ to change the vertical spacing globally*/
   --color-candy-stripe: #76c4dd;
   --color-salmon: #ff2140;
   --font-display: "Libre Baskerville", serif;
+  --bg-pinstripe: repeating-linear-gradient(
+    45deg,
+    #ecf5ef,
+    #ecf5ef 120px,
+    white 120px,
+    white 180px
+  );
 }
 
 html,
@@ -40,14 +47,9 @@ body {
 }
 
 body {
-  background: repeating-linear-gradient(
-    45deg,
-    #ecf5ef,
-    #ecf5ef 120px,
-    white 120px,
-    white 180px
-  );
-  background-size: 100%;
+  background: var(--body-bg, var(--bg-pinstripe));
+  background-size: cover
+  transition: 0.3s background;
   width: 100%;
   height: 100%;
 }
