@@ -24,7 +24,7 @@
   }
 
   .Logo {
-    color: #333;
+    color: var(--color-fiber);
     margin: 0 auto;
     text-decoration: none;
     text-align: center;
