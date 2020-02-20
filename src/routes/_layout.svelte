@@ -16,7 +16,6 @@
     text-align: center;
     font-family: var(--font-display);
     font-size: 48px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
     /** This is stupid, but whatever **/
     display: flex;
     justify-content: center;
@@ -38,6 +37,10 @@
     text-align: center;
   }
 
+  .Tagline u {
+    text-decoration-style: dashed;
+  }
+
   main {
     padding: 0 24px 24px;
   }
@@ -52,7 +55,12 @@
     <span>d</span>
     <span>y</span>
   </a>
-  <span class="Tagline">A study in gastronomic consistency</span>
+  <span class="Tagline">
+    <u>Consistent</u>
+    recipes for
+    <u>consistent</u>
+    results
+  </span>
 </header>
 
 <main>

@@ -1,15 +1,15 @@
 <style>
   section {
-    background-color: white;
+    background-color: var(--color-fiber);
     background-position: 50% 50%;
     background-size: cover;
-    border-radius: 1px;
+    border-radius: 2px;
+    border: 1rem solid var(--color-fiber);
     box-shadow: 0 0 2px rgba(137, 149, 141, 0.51);
     box-sizing: border-box;
-    margin: 0 auto 64px;
+    margin: 0 auto 3rem;
+    padding: 16rem 0 0;
     max-width: 34em;
-    overflow: hidden;
-    padding-top: 16rem;
     position: relative;
   }
 
@@ -28,8 +28,9 @@
     padding: 1rem 1.5rem 1.75rem;
     background: white;
     position: relative;
+    border-radius: 2px;
     z-index: 1;
-    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   }
 
   .Title {
@@ -43,7 +44,8 @@
   }
 
   footer {
-    border-top: 1px solid var(--color-fiber);
+    border-top: 2px dashed #d9d9d9;
+    color: var(--color-salmon);
     padding-top: 16px;
     margin-top: 16px;
     font-style: italic;
@@ -58,9 +60,16 @@
 <section style="background-image: url(/green-juice.jpeg);">
   <div class="Details">
     <h2 class="Title">Green Juice</h2>
-    <p class="Description">Our take on a favorite <a href="https://greenkitchenstories.com/drink-your-greens-yellows-reds/">Green Kitchen Stories smoothie</a>.</p>
+    <p class="Description">
+      Our take on a favorite
+      <a href="https://greenkitchenstories.com/drink-your-greens-yellows-reds/">
+        Green Kitchen Stories smoothie
+      </a>
+      .
+    </p>
     <footer class="Facts">
-      390 calories, 50g Carbs, 21g Fat, 15.5g Protein, <b>18g Fiber</b>
+      390 cal, 50g Carbs, 21g Fat, 15.5g Protein,
+      <b>18g Fiber</b>
     </footer>
   </div>
 </section>
@@ -70,7 +79,8 @@
     <h2 class="Title">Popcorn</h2>
     <p class="Description">So salty you might die.</p>
     <footer class="Facts">
-      240 calories, 58g Carbs, 4g Fat, 4g Protein, <b>12g Fiber</b>
+      240 calories, 58g Carbs, 4g Fat, 4g Protein,
+      <b>12g Fiber</b>
     </footer>
   </div>
 </section>
