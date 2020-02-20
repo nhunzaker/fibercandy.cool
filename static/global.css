@@ -70,7 +70,6 @@ html {
 
 body {
   font-size: 0.875em;
-  max-width: calc(25 * var(--vspace));
   margin: 0 auto;
 }
 

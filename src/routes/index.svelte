@@ -1,19 +1,22 @@
+<script>
+  import HomeAd from '../components/home-ad.svelte'
+</script>
+
 <style>
-  section {
+  article {
     background-color: var(--color-fiber);
     background-position: 50% 50%;
     background-size: cover;
     border-radius: 2px;
     border: 1rem solid var(--color-fiber);
     box-shadow: 0 0 2px rgba(137, 149, 141, 0.51);
-    box-sizing: border-box;
-    margin: 0 auto 3rem;
+    margin: 0 auto 2rem;
     padding: 16rem 0 0;
     max-width: 34em;
     position: relative;
   }
 
-  section:after {
+  article:after {
     position: absolute;
     z-index: 0;
     content: "";
@@ -25,12 +28,15 @@
   }
 
   .Details {
-    padding: 1rem 1.5rem 1.75rem;
     background: white;
-    position: relative;
     border-radius: 2px;
-    z-index: 1;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    color: inherit;
+    display: block;
+    padding: 1rem 1.5rem 1.75rem;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
   }
 
   .Title {
@@ -57,8 +63,8 @@
   <title>fibercandy.cool</title>
 </svelte:head>
 
-<section style="background-image: url(/green-juice.jpeg);">
-  <div class="Details">
+<article style="background-image: url(/green-juice.jpeg);">
+  <a href="/recipes/green-juice" class="Details">
     <h2 class="Title">Green Juice</h2>
     <p class="Description">
       Our take on a favorite
@@ -71,16 +77,16 @@
       390 cal, 50g Carbs, 21g Fat, 15.5g Protein,
       <b>18g Fiber</b>
     </footer>
-  </div>
-</section>
+  </a>
+</article>
 
-<section style="background-image: url(/popcorn.jpg);">
-  <div class="Details">
+<article style="background-image: url(/popcorn.jpg);">
+  <a href="/recipes/popcorn" class="Details">
     <h2 class="Title">Popcorn</h2>
     <p class="Description">So salty you might die.</p>
     <footer class="Facts">
       240 calories, 58g Carbs, 4g Fat, 4g Protein,
       <b>12g Fiber</b>
     </footer>
-  </div>
-</section>
+  </a>
+</article>

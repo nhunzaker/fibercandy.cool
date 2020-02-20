@@ -6,7 +6,21 @@
 
 <style>
   header {
-    margin: 64px 0 48px;
+    background: var(--hero-background);
+    box-shadow: var(--hero-shadow);
+    padding: var(--hero-padding, 64px 0 48px);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: 0.25s padding;
+  }
+
+  .Brand {
+    background: var(--brand-background);
+    border-radius: 2px;
+    box-shadow: var(--brand-shadow);
+    padding: 16px 20px 20px;
+    transition: 0.25s background;
   }
 
   .Logo {
@@ -40,27 +54,25 @@
   .Tagline u {
     text-decoration-style: dashed;
   }
-
-  main {
-    padding: 0 24px 24px;
-  }
 </style>
 
 <header>
-  <a href="/" class="Logo color-fiber">
-    <span>fiber</span>
-    <span>c</span>
-    <span>a</span>
-    <span>n</span>
-    <span>d</span>
-    <span>y</span>
-  </a>
-  <span class="Tagline">
-    <u>Consistent</u>
-    recipes for
-    <u>consistent</u>
-    results
-  </span>
+  <div class="Brand">
+    <a href="/" class="Logo color-fiber">
+      <span>fiber</span>
+      <span>c</span>
+      <span>a</span>
+      <span>n</span>
+      <span>d</span>
+      <span>y</span>
+    </a>
+    <span class="Tagline">
+      <u>Consistent</u>
+      recipes for
+      <u>consistent</u>
+      results
+    </span>
+  </div>
 </header>
 
 <main>
