@@ -12,10 +12,9 @@
       --body-bg: white;
       --hero-background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), var(--color-fiber) url(/green-juice.jpg);
       --hero-shadow: inset 0 -1px 10px rgba(0, 0, 0, 0.54);
-      --hero-padding: 128px 0 128px;
-      --brand-background: white;
+      --hero-padding: 128px 0;
+      --brand-background: var(--body-bg);
       --brand-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-      --bg
     }
   </style>
 </svelte:head>
