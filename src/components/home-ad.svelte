@@ -12,5 +12,5 @@
 </style>
 
 <figure>
-  <img src={src} />
+  <img {src} />
 </figure>

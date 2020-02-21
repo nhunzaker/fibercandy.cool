@@ -48,7 +48,7 @@ body {
 
 body {
   background: var(--body-bg, var(--bg-pinstripe));
-  background-size: cover
+  background-size: cover;
   transition: 0.3s background;
   width: 100%;
   height: 100%;

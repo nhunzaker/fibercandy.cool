@@ -6,8 +6,8 @@
 
 <style>
   header {
-    background: var(--hero-background);
-    box-shadow: var(--hero-shadow);
+    background: var(--hero-background, transparent);
+    box-shadow: var(--hero-shadow, none);
     padding: var(--hero-padding, 64px 0 48px);
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@
   }
 
   .Brand {
-    background: var(--brand-background);
+    background: var(--brand-background, transparent);
     border-radius: 2px;
     box-shadow: var(--brand-shadow);
     padding: 16px 20px 20px;

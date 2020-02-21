@@ -1,22 +1,25 @@
 <script>
-  import HomeAd from '../components/home-ad.svelte'
+  import HomeAd from "../components/home-ad.svelte";
 </script>
 
 <style>
-  article {
+  .Article {
     background-color: var(--color-fiber);
     background-position: 50% 50%;
     background-size: cover;
     border-radius: 2px;
     border: 1rem solid var(--color-fiber);
     box-shadow: 0 0 2px rgba(137, 149, 141, 0.51);
+    color: inherit;
+    display: block;
+    text-decoration: none;
     margin: 0 auto 2rem;
     padding: 16rem 0 0;
     max-width: 34em;
     position: relative;
   }
 
-  article:after {
+  .Article:after {
     position: absolute;
     z-index: 0;
     content: "";
@@ -63,30 +66,32 @@
   <title>fibercandy.cool</title>
 </svelte:head>
 
-<article style="background-image: url(/green-juice.jpg);">
-  <a href="/recipes/green-juice" class="Details">
+<a
+  class="Article"
+  href="/recipes/green-juice"
+  style="background-image: url(/green-juice.jpg);">
+  <div class="Details">
     <h2 class="Title">Green Juice</h2>
     <p class="Description">
-      Our take on a favorite
-      <a href="https://greenkitchenstories.com/drink-your-greens-yellows-reds/">
-        Green Kitchen Stories smoothie
-      </a>
-      .
+      Our take on a favorite Green Kitchen Stories smoothie.
     </p>
     <footer class="Facts">
       390 cal, 50g Carbs, 21g Fat, 15.5g Protein,
       <b>18g Fiber</b>
     </footer>
-  </a>
-</article>
+  </div>
+</a>
 
-<article style="background-image: url(/popcorn.jpg);">
-  <a href="/recipes/popcorn" class="Details">
+<a
+  class="Article"
+  href="/recipes/popcorn"
+  style="background-image: url(/popcorn.jpg);">
+  <div class="Details">
     <h2 class="Title">Popcorn</h2>
     <p class="Description">So salty you might die.</p>
     <footer class="Facts">
       240 calories, 58g Carbs, 4g Fat, 4g Protein,
       <b>12g Fiber</b>
     </footer>
-  </a>
-</article>
+  </div>
+</a>
