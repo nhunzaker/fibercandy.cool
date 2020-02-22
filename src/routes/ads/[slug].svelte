@@ -58,8 +58,14 @@
     <HomeAd ad={ad} />
 
     <p>
-      This ad is fake. {ad.title} isn't real (hopefully), but we've added $0.04 to the Sage Cheese
-      Fund.
+      This ad is fake. <b>{ad.title}</b> isn't real (as far as we
+      know), but we've still added $0.04 to the Sage Cheese Fund.
+    </p>
+
+    <p>
+      4 whole cents! That's like... insane ad revenue if we weren't
+      paying for it ourselves. We're going to go broke while our dog
+      guzzles down gruyere.
     </p>
 
     <p>Sage thanks you for your generous gift.</p>
