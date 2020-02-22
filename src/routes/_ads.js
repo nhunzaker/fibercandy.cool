@@ -12,7 +12,8 @@ export const ADS = [
     title: "Pup of Joe"
   },
   {
-    alt: "Barkley and Wags - does your human owe you treats and walkies? Call the law offices of Barkley and Wags.",
+    alt:
+      "Barkley and Wags - does your human owe you treats and walkies? Call the law offices of Barkley and Wags.",
     slug: "barkley-and-wags",
     src: "/ads/barkley-and-wags.jpg",
     title: "Barkey and Wags"
@@ -24,7 +25,8 @@ export const ADS = [
     title: "Scraps Sharks"
   },
   {
-    alt: "Guard puppy - protecs from murderers, out of place objects on the sidewalk, other doggies, and interactions with other humans in public.",
+    alt:
+      "Guard puppy - protecs from murderers, out of place objects on the sidewalk, other doggies, and interactions with other humans in public.",
     slug: "guard-puppy",
     src: "/ads/guard-puppy.jpg",
     title: "Guard Puppy"

@@ -78,7 +78,8 @@
     <p class="Description">{recipe.description}</p>
     <footer class="Facts">
       {calories} cal / {toGrams(carbs)} carbs / {toGrams(fat)} fat / {toGrams(protein)}
-      protein / <b>{toGrams(fiber)} fiber</b>
+      protein /
+      <b>{toGrams(fiber)} fiber</b>
     </footer>
   </div>
 </a>

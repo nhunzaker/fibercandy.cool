@@ -1,7 +1,7 @@
 <script>
   import { RECIPES } from "../_recipes.js";
   import Recipe from "../../components/recipe.svelte";
-  import HomeAd from '../../components/home-ad.svelte'
+  import HomeAd from "../../components/home-ad.svelte";
 
   const recipe = RECIPES.find(recipe => recipe.slug === "green-juice");
   const ingredients = recipe ? recipe.ingredients : [];
@@ -57,20 +57,34 @@
   </div>
 
   <div class="Content">
-    <p>We originally found this recipe over at <a href="https://greenkitchenstories.com/drink-your-greens-yellows-reds/">Green Kitchen Stories</a>. Over the years we've made a few modifications, and lean hard into the chunkiness of this recipe.</p>
+    <p>
+      We originally found this recipe over at
+      <a href="https://greenkitchenstories.com/drink-your-greens-yellows-reds/">
+        Green Kitchen Stories
+      </a>
+      . Over the years we've made a few modifications, and lean hard into the
+      chunkiness of this recipe.
+    </p>
     <p>Be ready to drink pulp. Lots of it.</p>
 
     <HomeAd />
 
-    <p>
-      Basically chop everything, but here are some useful tips:
-    </p>
+    <p>Basically chop everything, but here are some useful tips:</p>
 
     <ul>
-      <li>First thing, pour in the almond milk and chia seeds so that they can soak while you chop other ingredients.</li>
-      <li>We like to keep frozen bananas on hand. We just have a bunch in the freezer. It only needs to thaw about 5 minutes.</li>
+      <li>
+        First thing, pour in the almond milk and chia seeds so that they can
+        soak while you chop other ingredients.
+      </li>
+      <li>
+        We like to keep frozen bananas on hand. We just have a bunch in the
+        freezer. It only needs to thaw about 5 minutes.
+      </li>
       <li>Refridgerate for about 10 minutes after making.</li>
-      <li>If we can't find a kiwi, we also make this juice with Mangos. Just substitute 2 kiwis for 1 mango.</li>
+      <li>
+        If we can't find a kiwi, we also make this juice with Mangos. Just
+        substitute 2 kiwis for 1 mango.
+      </li>
     </ul>
   </div>
 </section>

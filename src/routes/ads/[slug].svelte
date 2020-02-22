@@ -2,25 +2,25 @@
   import { ADS } from "../_ads.js";
 
   export async function preload({ params, query }) {
-    const ad = ADS.find(ad => ad.slug == params.slug) || ADS[0]
+    const ad = ADS.find(ad => ad.slug == params.slug) || ADS[0];
 
-    return { ad }
+    return { ad };
   }
 </script>
 
 <script>
-  import { onMount } from 'svelte'
-  import HomeAd from '../../components/home-ad.svelte';
+  import { onMount } from "svelte";
+  import HomeAd from "../../components/home-ad.svelte";
 
   export let ad;
 
-  const prod = process.env.NODE_ENV !== 'development'
+  const prod = process.env.NODE_ENV !== "development";
 
   onMount(() => {
     if (prod) {
-      fetch("https://fibercandy.cool/.netlify/functions/ad-tracker")
+      fetch("https://fibercandy.cool/.netlify/functions/ad-tracker");
     }
-  })
+  });
 </script>
 
 <style>
@@ -54,19 +54,21 @@
 
 <section>
   <div class="Content">
-    <HomeAd ad={ad} />
+    <HomeAd {ad} />
 
     <h1>Just kidding!</h1>
 
     <p>
-      This ad is fake. <b>{ad.title}</b> isn't real (as far as we
-      know), but we've still added $0.04 to the Sage Cheese Fund.
+      This ad is fake.
+      <b>{ad.title}</b>
+      isn't real (as far as we know), but we've still added $0.04 to the Sage
+      Cheese Fund.
     </p>
 
     <p>
-      4 whole cents! That's like... insane ad revenue if we weren't
-      paying for it ourselves. We're going to go broke while our dog
-      guzzles down gruyere.
+      4 whole cents! That's like... insane ad revenue. It's a shame we're paying
+      for it ourselves. We're going to go broke while our dog guzzles down
+      gruyere.
     </p>
 
     <p>Sage thanks you for your generous gift.</p>

@@ -79,15 +79,15 @@
     white-space: nowrap;
   }
 
-   input {
-     background: rgba(0, 0, 0, 0.43);
-     border-radius: 3px;
-     border: 0;
-     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
-     color: white;
-     max-width: 100%;
-     padding: 4px 7px;
-     width: 100%;
+  input {
+    background: rgba(0, 0, 0, 0.43);
+    border-radius: 3px;
+    border: 0;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
+    color: white;
+    max-width: 100%;
+    padding: 4px 7px;
+    width: 100%;
   }
 </style>
 
@@ -127,17 +127,11 @@
       <td>Servings (split)</td>
       <td class="nowrap">
         <label>
-          <input
-            type="number"
-            step="0.5"
-            min="0.5"
-            bind:value={servings} />
+          <input type="number" step="0.5" min="0.5" bind:value={servings} />
           <span class="visuallyhidden">Change serving size</span>
         </label>
       </td>
-      <td class="Number">
-        {toGrams(servingGrams)}
-      </td>
+      <td class="Number">{toGrams(servingGrams)}</td>
       <td class="Number">{toFixed(servingsCalories)}</td>
       <td class="Number">{toGrams(servingsCarbs)}</td>
       <td class="Number">{toGrams(servingsFat)}</td>

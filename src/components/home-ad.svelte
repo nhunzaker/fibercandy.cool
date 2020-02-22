@@ -1,7 +1,7 @@
 <script>
-  import { ADS } from '../routes/_ads.js'
+  import { ADS } from "../routes/_ads.js";
 
-  export let ad = ADS[Math.floor(Math.random() * ADS.length)]
+  export let ad = ADS[Math.floor(Math.random() * ADS.length)];
 </script>
 
 <style>
