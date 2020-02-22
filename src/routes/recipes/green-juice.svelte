@@ -1,6 +1,7 @@
 <script>
   import { RECIPES } from "../_recipes.js";
   import Recipe from "../../components/recipe.svelte";
+  import HomeAd from '../../components/home-ad.svelte'
 
   const recipe = RECIPES.find(recipe => recipe.slug === "green-juice");
   const ingredients = recipe ? recipe.ingredients : [];
@@ -29,7 +30,7 @@
     :root {
       --body-bg: white;
       --hero-background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)),
-        var(--color-fiber) url(/green-juice.jpg);
+        var(--color-fiber) url(/green-juice.jpg) 50% 20% / cover;
       --hero-shadow: inset 0 -1px 10px rgba(0, 0, 0, 0.54);
       --hero-padding: 128px 0;
       --brand-background: var(--body-bg);
@@ -64,6 +65,9 @@
       lectus vel justo elementum efficitur. Vivamus accumsan vehicula felis et
       fringilla. Cras aliquam porta facilisis.
     </p>
+
+    <HomeAd />
+
     <p>
       Integer sit amet fermentum diam. Proin ultricies fermentum volutpat. Donec
       tincidunt viverra pellentesque. Nunc ac facilisis mauris, sed vehicula

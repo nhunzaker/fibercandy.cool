@@ -1,6 +1,7 @@
 <script>
   import { RECIPES } from "../_recipes.js";
   import Recipe from "../../components/recipe.svelte";
+  import HomeAd from '../../components/home-ad.svelte'
 
   const recipe = RECIPES.find(recipe => recipe.slug === "popcorn");
   const ingredients = recipe ? recipe.ingredients : [];
@@ -61,6 +62,9 @@
       lectus vel justo elementum efficitur. Vivamus accumsan vehicula felis et
       fringilla. Cras aliquam porta facilisis.
     </p>
+
+    <HomeAd />
+
     <p>
       Integer sit amet fermentum diam. Proin ultricies fermentum volutpat. Donec
       tincidunt viverra pellentesque. Nunc ac facilisis mauris, sed vehicula
