@@ -13,6 +13,7 @@
     line-height: 1.5;
     max-width: 38rem;
     margin: 0 auto;
+    overflow: auto;
     padding: 0 24px 16px;
   }
 
