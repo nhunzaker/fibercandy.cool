@@ -26,7 +26,7 @@
 </style>
 
 <svelte:head>
-  <title>Green Juice</title>
+  <title>{recipe.title}</title>
 
   <style>
     :root {

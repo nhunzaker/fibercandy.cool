@@ -39,6 +39,8 @@
 </style>
 
 <svelte:head>
+  <title>{ad.title}</title>
+
   <style>
     :root {
       --body-bg: white;
