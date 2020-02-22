@@ -203,3 +203,7 @@ img {
   height: 1px; width: 1px;
   margin: -1px; padding: 0; border: 0;
 }
+
+li {
+  margin-bottom: 0.5em;
+}

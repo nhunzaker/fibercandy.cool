@@ -47,6 +47,16 @@ export const RECIPES = [
         fiber: 2.7
       },
       {
+        name: "Kiwi",
+        amount: "2",
+        grams: 160,
+        calories: 97.5,
+        carbs: 24,
+        fat: 0.8,
+        protein: 1.76,
+        fiber: 4.8
+      },
+      {
         name: "Avocado",
         amount: "1 half",
         grams: 75,

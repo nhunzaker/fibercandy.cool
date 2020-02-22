@@ -54,28 +54,20 @@
   </div>
 
   <div class="Content">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus mi
-      magna. Etiam urna ligula, tincidunt ac ornare quis, aliquam sit amet urna.
-      Ut facilisis auctor dignissim. Sed quis nisl ut velit sagittis sodales sit
-      amet vel nibh. Vivamus sit amet diam velit. Nam laoreet nisi at maximus
-      placerat. Nullam elit tortor, tempor congue tempor a, porttitor vitae
-      quam. Nam vitae est a ante posuere pulvinar vel eget nunc. Quisque at
-      semper lectus. Nullam semper nec quam ut pellentesque. Nam tincidunt
-      lectus vel justo elementum efficitur. Vivamus accumsan vehicula felis et
-      fringilla. Cras aliquam porta facilisis.
-    </p>
+    <p>We originally found this recipe over at <a href="https://greenkitchenstories.com/drink-your-greens-yellows-reds/">Green Kitchen Stories</a>. Over the years we've made a few modifications, and lean hard into the chunkiness of this recipe.</p>
+    <p>Be ready to drink pulp. Lots of it.</p>
 
     <HomeAd />
 
     <p>
-      Integer sit amet fermentum diam. Proin ultricies fermentum volutpat. Donec
-      tincidunt viverra pellentesque. Nunc ac facilisis mauris, sed vehicula
-      nisi. Integer eget orci arcu. Ut commodo tempor pellentesque. Maecenas
-      eget erat id elit semper finibus ut eget purus. Cras tellus mi, accumsan
-      sit amet enim vel, ornare hendrerit elit. Sed non pellentesque diam. Cras
-      sed consectetur libero, vel congue nisi. Vivamus euismod tellus id egestas
-      sollicitudin. Vivamus ornare quam quis odio dapibus maximus.
+      Basically chop everything, but here are some useful tips:
     </p>
+
+    <ul>
+      <li>First thing, pour in the almond milk and chia seeds so that they can soak while you chop other ingredients.</li>
+      <li>We like to keep frozen bananas on hand. We just have a bunch in the freezer. It only needs to thaw about 5 minutes.</li>
+      <li>Refridgerate for about 10 minutes after making.</li>
+      <li>If we can't find a kiwi, we also make this juice with Mangos. Just substitute 2 kiwis for 1 mango.</li>
+    </ul>
   </div>
 </section>

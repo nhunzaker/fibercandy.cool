@@ -52,27 +52,23 @@
 
   <div class="Content">
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus mi
-      magna. Etiam urna ligula, tincidunt ac ornare quis, aliquam sit amet urna.
-      Ut facilisis auctor dignissim. Sed quis nisl ut velit sagittis sodales sit
-      amet vel nibh. Vivamus sit amet diam velit. Nam laoreet nisi at maximus
-      placerat. Nullam elit tortor, tempor congue tempor a, porttitor vitae
-      quam. Nam vitae est a ante posuere pulvinar vel eget nunc. Quisque at
-      semper lectus. Nullam semper nec quam ut pellentesque. Nam tincidunt
-      lectus vel justo elementum efficitur. Vivamus accumsan vehicula felis et
-      fringilla. Cras aliquam porta facilisis.
+      We don't follow the amounts perfectly. You kind of have to feel it.
     </p>
 
     <HomeAd />
 
-    <p>
-      Integer sit amet fermentum diam. Proin ultricies fermentum volutpat. Donec
-      tincidunt viverra pellentesque. Nunc ac facilisis mauris, sed vehicula
-      nisi. Integer eget orci arcu. Ut commodo tempor pellentesque. Maecenas
-      eget erat id elit semper finibus ut eget purus. Cras tellus mi, accumsan
-      sit amet enim vel, ornare hendrerit elit. Sed non pellentesque diam. Cras
-      sed consectetur libero, vel congue nisi. Vivamus euismod tellus id egestas
-      sollicitudin. Vivamus ornare quam quis odio dapibus maximus.
-    </p>
+    <p>This is generally pretty easy to make, but we have some tips for the popcorn:</p>
+
+    <ol>
+      <li>Heat the oil in a large pot over medium heat with 3 kernels in the pan</li>
+      <li>Wait for all three kernels to pop</li>
+      <li>Take off heat, put remaining kernels in pot. Count a full 30 seconds</li>
+      <li>Return to pot to heat. Occasionally shake the pot to drop the kernels to the bottom</li>
+      <li>Remove from heat when the popcorn stops popping</li>
+      <li>Divide popcorn into two large bowls</li>
+      <li>Divide remaining ingredients in half. Stir each portion of popcorn in pot with ingredients</li>
+    </ol>
+
+    <p>Also consider adding cayenne pepper or parmasian cheese for something different.</p>
   </div>
 </section>
