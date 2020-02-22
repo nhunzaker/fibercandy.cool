@@ -48,7 +48,7 @@ export const RECIPES = [
       },
       {
         name: "Avocado",
-        amount: "half",
+        amount: "1 half",
         grams: 75,
         calories: 118,
         carbs: 6.7,
@@ -58,7 +58,7 @@ export const RECIPES = [
       },
       {
         name: "Limes",
-        amount: "2, with pulp",
+        amount: "2, peeled",
         grams: 120,
         calories: 36,
         carbs: 13,
@@ -68,7 +68,7 @@ export const RECIPES = [
       },
       {
         name: "Banana",
-        amount: "peeled",
+        amount: "1, peeled",
         grams: 103,
         calories: 91.64,
         carbs: 23.7,
@@ -88,7 +88,7 @@ export const RECIPES = [
       },
       {
         name: "Ginger",
-        amount: "~ an inch",
+        amount: "~1 inch",
         grams: 10,
         calories: 8,
         carbs: 1.8,
@@ -98,7 +98,7 @@ export const RECIPES = [
       },
       {
         name: "Pistachios",
-        amount: "~ ¼ cup",
+        amount: "~¼ cup",
         grams: 28.4,
         calories: 159,
         carbs: 8,

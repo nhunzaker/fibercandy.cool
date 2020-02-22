@@ -4,7 +4,7 @@
   export let recipe;
   export let servings = 2;
 
-  const keys = ["amount", "grams", "calories", "carbs", "fat", "protein", "fiber"];
+  const keys = ["grams", "calories", "carbs", "fat", "protein", "fiber"];
 
   $: servingGrams = tally(recipe.ingredients, "grams") / servings;
   $: ingredients = recipe.ingredients || [];
@@ -27,6 +27,8 @@
     border-collapse: collapse;
     border: 1px solid rgba(0, 0, 0, 0.18);
     white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 14px;
     width: 100%;
   }
 
@@ -35,15 +37,23 @@
   }
 
   td {
-    padding: 8px;
+    padding: 6px 8px;
   }
 
   tbody tr:not(:last-child) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.18);
   }
 
+  td:not(:first-child) {
+    border-left: 1px solid rgba(0, 0, 0, 0.18);
+  }
+
   .Name {
     width: 100%;
+  }
+
+  .Number {
+    text-align: center;
   }
 
   td:first-child {
@@ -57,8 +67,8 @@
   tfoot,
   thead {
     background: var(--color-fiber);
-    color: white;
-    font-weight: bold;
+    color: #fff;
+    font-weight: 600;
   }
 
   tfoot tr:not(:last-child) {
@@ -69,37 +79,33 @@
     white-space: nowrap;
   }
 
-  .nowrap input {
-    border: 0;
-    padding: 4px;
-    width: 40px;
-  }
-
-  .Checklist {
-    width: 30px;
+   input {
+     background: rgba(0, 0, 0, 0.43);
+     border-radius: 3px;
+     border: 0;
+     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
+     color: white;
+     max-width: 100%;
+     padding: 4px 7px;
+     width: 100%;
   }
 </style>
 
 <table>
   <thead>
     <tr>
-      <td></td>
       <td class="Name">Ingredient</td>
+      <td>Amount</td>
       {#each keys as key}
-        <td>{key}</td>
+        <td class="Number">{key}</td>
       {/each}
     </tr>
   </thead>
   <tbody>
     {#each ingredients as ingredient}
       <tr>
-        <td class="Checklist">
-          <label>
-            <input type="checkbox" />
-            <span class="visuallyhidden">I've added this ingredient</span>
-          </label>
-        </td>
         <td class="Name">{ingredient.name}</td>
+        <td>{ingredient.amount}</td>
         {#each keys as key}
           <td class="Number">{ingredient[key]}</td>
         {/each}
@@ -108,33 +114,31 @@
   </tbody>
   <tfoot>
     <tr>
-      <td></td>
       <td>Total</td>
       <td>-</td>
-      <td>{toGrams(tally(ingredients, 'grams'))}</td>
-      <td>{toGrams(tally(ingredients, 'calories'))}</td>
-      <td>{toGrams(tally(ingredients, 'carbs'))}</td>
-      <td>{toGrams(tally(ingredients, 'fat'))}</td>
-      <td>{toGrams(tally(ingredients, 'protein'))}</td>
-      <td>{toGrams(tally(ingredients, 'fiber'))}</td>
+      <td class="Number">{toGrams(tally(ingredients, 'grams'))}</td>
+      <td class="Number">{toGrams(tally(ingredients, 'calories'))}</td>
+      <td class="Number">{toGrams(tally(ingredients, 'carbs'))}</td>
+      <td class="Number">{toGrams(tally(ingredients, 'fat'))}</td>
+      <td class="Number">{toGrams(tally(ingredients, 'protein'))}</td>
+      <td class="Number">{toGrams(tally(ingredients, 'fiber'))}</td>
     </tr>
     <tr>
-      <td></td>
-      <td>Servings</td>
+      <td>Servings (split)</td>
       <td class="nowrap">
         <input
           type="number"
           step="any"
           bind:value={servings} />
       </td>
-      <td>
+      <td class="Number">
         {toGrams(servingGrams)}
       </td>
-      <td>{toGrams(servingsCalories)}</td>
-      <td>{toGrams(servingsCarbs)}</td>
-      <td>{toGrams(servingsFat)}</td>
-      <td>{toGrams(servingsProtein)}</td>
-      <td>{toGrams(servingsFiber)}</td>
+      <td class="Number">{toGrams(servingsCalories)}</td>
+      <td class="Number">{toGrams(servingsCarbs)}</td>
+      <td class="Number">{toGrams(servingsFat)}</td>
+      <td class="Number">{toGrams(servingsProtein)}</td>
+      <td class="Number">{toGrams(servingsFiber)}</td>
     </tr>
   </tfoot>
 </table>

@@ -8,13 +8,19 @@
 
 <style>
   .Content {
-    max-width: 32rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 34rem;
     margin: 0 auto;
     padding: 0 24px 16px;
   }
 
+  h1 {
+    font-size: 4rem;
+  }
+
   .Content.break {
-    max-width: 40rem;
+    max-width: 42rem;
   }
 </style>
 
