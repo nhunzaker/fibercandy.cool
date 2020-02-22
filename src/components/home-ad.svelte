@@ -9,7 +9,7 @@
     display: block;
     max-width: 384px;
     width: 100%;
-    margin: 2rem auto;
+    margin: 4rem auto;
     border: 1px solid var(--color-fiber);
     box-shadow: 0 0 2px rgba(137, 149, 141, 0.51);
   }

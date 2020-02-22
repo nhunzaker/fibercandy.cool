@@ -30,6 +30,7 @@
     font-family: sans-serif;
     font-size: 14px;
     width: 100%;
+    margin: 2em 0;
   }
 
   thead td {
