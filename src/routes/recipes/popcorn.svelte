@@ -23,6 +23,25 @@
   .Content.break {
     max-width: 42rem;
   }
+
+  section {
+    background: white;
+    border-radius: 1px;
+    max-width: 768px;
+    margin: -120px auto 100px;
+    padding-top: 10px;
+    position: relative;
+  }
+
+  section:after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 400px;
+    top: -1px;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2);
+  }
 </style>
 
 <svelte:head>
@@ -34,7 +53,7 @@
       --hero-background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)),
         var(--color-fiber) url(/popcorn.jpg) 50% 50% / cover;
       --hero-shadow: inset 0 -1px 10px rgba(0, 0, 0, 0.24);
-      --hero-padding: 128px 0 128px;
+      --hero-padding: 56px 0 180px;
       --brand-background: white;
       --brand-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     }

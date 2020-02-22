@@ -14,6 +14,8 @@
     max-width: 34rem;
     margin: 0 auto;
     padding: 0 24px 16px;
+    position: relative;
+    z-index: 2;
   }
 
   h1 {
@@ -23,6 +25,25 @@
   .Content.break {
     overflow: auto;
     max-width: 42rem;
+  }
+
+  section {
+    background: white;
+    border-radius: 1px;
+    max-width: 768px;
+    margin: -120px auto 100px;
+    padding-top: 10px;
+    position: relative;
+  }
+
+  section:after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 400px;
+    top: -1px;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2);
   }
 </style>
 
@@ -35,7 +56,7 @@
       --hero-background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)),
         var(--color-fiber) url(/green-juice.jpg) 50% 20% / cover;
       --hero-shadow: inset 0 -1px 10px rgba(0, 0, 0, 0.54);
-      --hero-padding: 128px 0;
+      --hero-padding: 56px 0 180px;
       --brand-background: var(--body-bg);
       --brand-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     }

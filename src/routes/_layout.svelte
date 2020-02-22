@@ -7,6 +7,7 @@
     justify-content: center;
     text-align: center;
     transition: 0.25s padding;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%, 0% 0%);
   }
 
   .Brand {
@@ -40,7 +41,7 @@
   .Tagline {
     display: block;
     color: var(--color-fiber);
-    font-size: 18px;
+    font-size: 16px;
     font-style: italic;
     text-align: center;
   }
