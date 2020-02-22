@@ -28,5 +28,11 @@ export const ADS = [
     slug: "guard-puppy",
     src: "/ads/guard-puppy.jpg",
     title: "Guard Puppy"
+  },
+  {
+    alt: "Puppy PJs - keep your cutie's booty cozy",
+    slug: "puppy-pjs",
+    src: "/ads/puppy-pjs.jpg",
+    title: "Puppy PJs"
   }
 ];
