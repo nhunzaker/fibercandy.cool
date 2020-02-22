@@ -9,9 +9,18 @@
 </script>
 
 <script>
+  import { onMount } from 'svelte'
   import HomeAd from '../../components/home-ad.svelte';
 
   export let ad;
+
+  const prod = process.env.NODE_ENV !== 'development'
+
+  onMount(() => {
+    if (prod) {
+      fetch("https://fibercandy.cool/.netlify/functions/ad-tracker")
+    }
+  })
 </script>
 
 <style>
