@@ -1,9 +1,8 @@
-// modern JS style - encouraged
-export async function handler(event, context) {
-  return {
+module.exports = function handler(event, context) {
+  return Promise.resolve({
     statusCode: 200,
     body: JSON.stringify({
-      message: `Hello world ${Math.floor(Math.random() * 10)}`
+      message: "Thanks!"
     })
-  };
-}
+  });
+};
