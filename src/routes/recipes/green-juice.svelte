@@ -21,6 +21,7 @@
   }
 
   .Content.break {
+    overflow: auto;
     max-width: 42rem;
   }
 </style>
