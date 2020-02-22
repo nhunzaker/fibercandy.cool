@@ -11,13 +11,14 @@
   .Content {
     font-size: 1rem;
     line-height: 1.5;
-    max-width: 34rem;
+    max-width: 38rem;
     margin: 0 auto;
     padding: 0 24px 16px;
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
+    margin-bottom: 0.5em;
   }
 
   .Content.break {
@@ -27,20 +28,22 @@
   section {
     background: white;
     border-radius: 1px;
-    max-width: 768px;
+    max-width: 48rem;
     margin: -120px auto 100px;
-    padding-top: 10px;
+    padding-top: 0.5rem;
     position: relative;
   }
 
-  section:after {
+  section:before {
+    box-shadow: 0 0 20px 30px rgba(0, 0, 0, 0.4);
+    border-radius: 0 0 50% 50%;
     content: "";
+    height: 540px;
+    left: 5%;
     position: absolute;
-    z-index: 0;
-    width: 100%;
-    height: 400px;
-    top: -1px;
-    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2);
+    top: 0;
+    width: 90%;
+    z-index: -1;
   }
 </style>
 
