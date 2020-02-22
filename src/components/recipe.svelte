@@ -1,24 +1,21 @@
 <script>
-  export let recipe = [];
+  import { tally, toGrams, toFixed } from "../maths.js";
+
+  export let recipe;
   export let servings = 2;
 
   const keys = ["grams", "calories", "carbs", "fat", "protein", "fiber"];
 
-  let servingGrams = total("grams") / servings;
+  let servingGrams = tally(recipe.ingredients, "grams") / servings;
 
-  $: totalGrams = total("grams");
+  $: ingredients = recipe.ingredients || [];
+  $: totalGrams = tally(ingredients, "grams");
   $: servingRatio = totalGrams / servingGrams;
-  $: servingsCalories = total("calories", servingRatio);
-  $: servingsCarbs = total("carbs", servingRatio);
-  $: servingsFat = total("fat", servingRatio);
-  $: servingsProtein = total("protein", servingRatio);
-  $: servingsFiber = total("fiber", servingRatio);
-
-  function total(key, servings = 1) {
-    return parseFloat(
-      recipe.reduce((a, b) => a + b[key] / servings, 0).toFixed(2)
-    );
-  }
+  $: servingsCalories = tally(ingredients, "calories") / servingRatio;
+  $: servingsCarbs = tally(ingredients, "carbs") / servingRatio;
+  $: servingsFat = tally(ingredients, "fat") / servingRatio;
+  $: servingsProtein = tally(ingredients, "protein") / servingRatio;
+  $: servingsFiber = tally(ingredients, "fiber") / servingRatio;
 
   function resetServing() {
     servingGrams = totalGrams / servings;
@@ -39,7 +36,6 @@
 
   td {
     padding: 8px 12px;
-    vertical-align: top;
   }
 
   tbody tr:not(:last-child) {
@@ -61,20 +57,12 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.24);
   }
 
-  .ServingPicker {
+  .nowrap {
     white-space: nowrap;
   }
 
-  .ServingPicker input {
+  .nowrap input {
     width: 75px;
-  }
-
-  button {
-    border: 0;
-    background: 0;
-    text-transform: uppercase;
-    padding: 0 4px;
-    color: inherit;
   }
 </style>
 
@@ -88,7 +76,7 @@
     </tr>
   </thead>
   <tbody>
-    {#each recipe as ingredient}
+    {#each ingredients as ingredient}
       <tr>
         <td class="Name">{ingredient.name}</td>
         {#each keys as key}
@@ -99,34 +87,23 @@
   </tbody>
   <tfoot>
     <tr>
-      <td>Totals</td>
-      <td>{total('grams')}g</td>
-      <td>{total('calories')}</td>
-      <td>{total('carbs')}g</td>
-      <td>{total('fat')}g</td>
-      <td>{total('protein')}g</td>
-      <td>{total('fiber')}g</td>
-    </tr>
-    <tr>
-      <td>
-        Serving (
-        <button type="button" on:click={resetServing}>reset</button>
-        )
+      <td class="nowrap">
+        Servings: {toFixed(totalGrams / servingGrams)}
       </td>
-      <td class="ServingPicker">
+      <td class="nowrap">
         <input
           type="number"
           min="0"
           step="any"
-          max={total('grams')}
+          max={totalGrams}
           bind:value={servingGrams} />
         g
       </td>
-      <td>{servingsCalories}</td>
-      <td>{servingsCarbs}g</td>
-      <td>{servingsFat}g</td>
-      <td>{servingsProtein}g</td>
-      <td>{servingsFiber}g</td>
+      <td>{toGrams(servingsCalories)}</td>
+      <td>{toGrams(servingsCarbs)}</td>
+      <td>{toGrams(servingsFat)}</td>
+      <td>{toGrams(servingsProtein)}</td>
+      <td>{toGrams(servingsFiber)}</td>
     </tr>
   </tfoot>
 </table>

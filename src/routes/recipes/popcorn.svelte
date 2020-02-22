@@ -1,12 +1,20 @@
+<script>
+  import { RECIPES } from "../_recipes.js";
+  import Recipe from "../../components/recipe.svelte";
+
+  const recipe = RECIPES.find(recipe => recipe.slug === "popcorn");
+  const ingredients = recipe ? recipe.ingredients : [];
+</script>
+
 <style>
-  section {
-    background: white;
+  .Content {
+    max-width: 32rem;
+    margin: 0 auto;
+    padding: 0 24px 16px;
   }
 
-  div {
-    margin: 0 auto;
-    padding: 16px 24px;
-    max-width: 28rem;
+  .Content.break {
+    max-width: 40rem;
   }
 </style>
 
@@ -25,8 +33,17 @@
 </svelte:head>
 
 <section>
-  <div>
+  <div class="Content">
     <h1>Popcorn</h1>
+    <p>This popcorn recipe is probably killing us, but we just can't stop. So much butter. So much salt. So much cumin.</p>
+    <p>Don't stop us now.</p>
+  </div>
+
+  <div class="Content break">
+    <Recipe {recipe} />
+  </div>
+
+  <div class="Content">
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus mi
       magna. Etiam urna ligula, tincidunt ac ornare quis, aliquam sit amet urna.
@@ -46,17 +63,6 @@
       sit amet enim vel, ornare hendrerit elit. Sed non pellentesque diam. Cras
       sed consectetur libero, vel congue nisi. Vivamus euismod tellus id egestas
       sollicitudin. Vivamus ornare quam quis odio dapibus maximus.
-    </p>
-  </div>
-  <div>
-    <p>
-      Duis quis erat fringilla, varius nisl ut, sodales velit. Donec ultricies
-      interdum risus sed lobortis. Nulla sed porttitor velit. Quisque gravida
-      lorem sit amet turpis bibendum cursus. Etiam ac elit nec diam gravida
-      dignissim. Duis ac nibh arcu. Nunc fringilla enim vitae faucibus eleifend.
-      Aliquam erat volutpat. Vestibulum varius neque et turpis bibendum, ac
-      feugiat ante auctor. Integer blandit lectus ut enim pellentesque
-      ullamcorper.
     </p>
   </div>
 </section>
