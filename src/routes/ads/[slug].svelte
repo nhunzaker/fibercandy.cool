@@ -33,8 +33,8 @@
   }
 
   h1 {
-    font-size: 4rem;
-    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0;
   }
 </style>
 
@@ -42,9 +42,8 @@
   <style>
     :root {
       --body-bg: white;
-      --hero-background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)),
-        var(--color-fiber);
-      --hero-shadow: inset 0 -1px 10px rgba(0, 0, 0, 0.54);
+      --hero-background: var(--bg-pinstripe);
+      --hero-shadow: inset 0 -1px 5px rgba(0, 0, 0, 0.1);
       --brand-background: var(--body-bg);
       --brand-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     }
@@ -53,9 +52,9 @@
 
 <section>
   <div class="Content">
-    <h1>Just Kidding</h1>
-
     <HomeAd ad={ad} />
+
+    <h1>Just kidding!</h1>
 
     <p>
       This ad is fake. <b>{ad.title}</b> isn't real (as far as we
