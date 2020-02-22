@@ -4,10 +4,9 @@
   export let recipe;
   export let servings = 2;
 
-  const keys = ["grams", "calories", "carbs", "fat", "protein", "fiber"];
+  const keys = ["amount", "grams", "calories", "carbs", "fat", "protein", "fiber"];
 
-  let servingGrams = tally(recipe.ingredients, "grams") / servings;
-
+  $: servingGrams = tally(recipe.ingredients, "grams") / servings;
   $: ingredients = recipe.ingredients || [];
   $: totalGrams = tally(ingredients, "grams");
   $: servingRatio = totalGrams / servingGrams;
@@ -27,6 +26,7 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.14);
     border-collapse: collapse;
     border: 1px solid rgba(0, 0, 0, 0.18);
+    white-space: nowrap;
     width: 100%;
   }
 
@@ -35,7 +35,7 @@
   }
 
   td {
-    padding: 8px 12px;
+    padding: 8px;
   }
 
   tbody tr:not(:last-child) {
@@ -43,7 +43,15 @@
   }
 
   .Name {
-    white-space: nowrap;
+    width: 100%;
+  }
+
+  td:first-child {
+    padding-left: 12px;
+  }
+
+  td:last-child {
+    padding-right: 12px;
   }
 
   tfoot,
@@ -62,13 +70,20 @@
   }
 
   .nowrap input {
-    width: 75px;
+    border: 0;
+    padding: 4px;
+    width: 40px;
+  }
+
+  .Checklist {
+    width: 30px;
   }
 </style>
 
 <table>
   <thead>
     <tr>
+      <td></td>
       <td class="Name">Ingredient</td>
       {#each keys as key}
         <td>{key}</td>
@@ -78,16 +93,24 @@
   <tbody>
     {#each ingredients as ingredient}
       <tr>
+        <td class="Checklist">
+          <label>
+            <input type="checkbox" />
+            <span class="visuallyhidden">I've added this ingredient</span>
+          </label>
+        </td>
         <td class="Name">{ingredient.name}</td>
         {#each keys as key}
-          <td>{ingredient[key]}</td>
+          <td class="Number">{ingredient[key]}</td>
         {/each}
       </tr>
     {/each}
   </tbody>
   <tfoot>
     <tr>
-      <td>Totals</td>
+      <td></td>
+      <td>Total</td>
+      <td>-</td>
       <td>{toGrams(tally(ingredients, 'grams'))}</td>
       <td>{toGrams(tally(ingredients, 'calories'))}</td>
       <td>{toGrams(tally(ingredients, 'carbs'))}</td>
@@ -96,17 +119,16 @@
       <td>{toGrams(tally(ingredients, 'fiber'))}</td>
     </tr>
     <tr>
-      <td class="nowrap">
-        Per Serving ({toFixed(totalGrams / servingGrams)})
-      </td>
+      <td></td>
+      <td>Servings</td>
       <td class="nowrap">
         <input
           type="number"
-          min="0"
           step="any"
-          max={totalGrams}
-          bind:value={servingGrams} />
-        g
+          bind:value={servings} />
+      </td>
+      <td>
+        {toGrams(servingGrams)}
       </td>
       <td>{toGrams(servingsCalories)}</td>
       <td>{toGrams(servingsCarbs)}</td>

@@ -1,5 +1,9 @@
 export function toFixed(number, precision = 1) {
-  return parseFloat(number.toFixed(precision));
+  if (typeof number === "number") {
+    return parseFloat(number.toFixed(precision));
+  } else {
+    return number;
+  }
 }
 
 export function toGrams(value) {
@@ -7,5 +11,11 @@ export function toGrams(value) {
 }
 
 export function tally(items, key) {
-  return items.reduce((a, b) => a + b[key], 0);
+  return items.reduce(function(a, b) {
+    if (typeof b[key] === "number") {
+      return a + b[key];
+    } else {
+      return a;
+    }
+  }, 0);
 }

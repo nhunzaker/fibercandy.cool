@@ -7,7 +7,8 @@ export const RECIPES = [
     description: "Our take on a favorite Green Kitchen Stories smoothie",
     ingredients: [
       {
-        name: "Almond Milk - 1 cup",
+        name: "Almond Milk",
+        amount: "1 cup",
         grams: 240,
         calories: 40,
         carbs: 2,
@@ -16,7 +17,8 @@ export const RECIPES = [
         fiber: 1
       },
       {
-        name: "Chia Seeds - 2 TBS",
+        name: "Chia Seeds",
+        amount: "2 tbs",
         grams: 24,
         calories: 120,
         carbs: 8,
@@ -25,7 +27,8 @@ export const RECIPES = [
         fiber: 8
       },
       {
-        name: "Celery - 6 Stalks",
+        name: "Celery",
+        amount: "6 stalks",
         grams: 300,
         calories: 46.7,
         carbs: 9,
@@ -35,6 +38,7 @@ export const RECIPES = [
       },
       {
         name: "Kale",
+        amount: "3 stalks",
         grams: 75,
         calories: 36.75,
         carbs: 6.6,
@@ -43,7 +47,8 @@ export const RECIPES = [
         fiber: 2.7
       },
       {
-        name: "Avocado - Half",
+        name: "Avocado",
+        amount: "half",
         grams: 75,
         calories: 118,
         carbs: 6.7,
@@ -52,7 +57,8 @@ export const RECIPES = [
         fiber: 5.22
       },
       {
-        name: "2 Limes with Pulp",
+        name: "Limes",
+        amount: "2, with pulp",
         grams: 120,
         calories: 36,
         carbs: 13,
@@ -62,6 +68,7 @@ export const RECIPES = [
       },
       {
         name: "Banana",
+        amount: "peeled",
         grams: 103,
         calories: 91.64,
         carbs: 23.7,
@@ -70,7 +77,8 @@ export const RECIPES = [
         fiber: 2.68
       },
       {
-        name: "PB2 - 3 TBS",
+        name: "PB2",
+        amount: "3 tbs",
         grams: 18.5,
         calories: 67.5,
         carbs: 7.5,
@@ -80,6 +88,7 @@ export const RECIPES = [
       },
       {
         name: "Ginger",
+        amount: "~ an inch",
         grams: 10,
         calories: 8,
         carbs: 1.8,
@@ -89,6 +98,7 @@ export const RECIPES = [
       },
       {
         name: "Pistachios",
+        amount: "~ ¼ cup",
         grams: 28.4,
         calories: 159,
         carbs: 8,
@@ -107,6 +117,7 @@ export const RECIPES = [
     ingredients: [
       {
         name: "Popcorn",
+        amount: "3/4 cup",
         grams: 140,
         calories: 481.6,
         carbs: 102.67,
@@ -115,7 +126,8 @@ export const RECIPES = [
         fiber: 18.2
       },
       {
-        name: "Coconut Oil - 2 TBS",
+        name: "Coconut Oil",
+        amount: "2 tbs",
         grams: 26.2,
         calories: 234,
         carbs: 0,
@@ -124,7 +136,8 @@ export const RECIPES = [
         fiber: 0
       },
       {
-        name: "Butter - 2 TBS",
+        name: "Butter",
+        amount: "2 tbs",
         grams: 28.4,
         calories: 204,
         carbs: 0,
@@ -133,22 +146,24 @@ export const RECIPES = [
         fiber: 0
       },
       {
-        name: "Salt - 1.5 TBS",
-        grams: 0,
-        calories: 0,
-        carbs: 0,
-        fat: 0,
-        protein: 0,
-        fiber: 0
+        name: "Salt",
+        amount: "1 tbs",
+        grams: "-",
+        calories: "-",
+        carbs: "-",
+        fat: "-",
+        protein: "-",
+        fiber: "-"
       },
       {
-        name: "Cumin - 3 TBS",
-        grams: 0,
-        calories: 0,
-        carbs: 0,
-        fat: 0,
-        protein: 0,
-        fiber: 0
+        name: "Cumin",
+        amount: "3 tbs",
+        grams: "-",
+        calories: "-",
+        carbs: "-",
+        fat: "-",
+        protein: "-",
+        fiber: "-"
       }
     ]
   }
