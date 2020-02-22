@@ -26,6 +26,8 @@
 </style>
 
 <svelte:head>
+  <title>Green Juice</title>
+
   <style>
     :root {
       --body-bg: white;

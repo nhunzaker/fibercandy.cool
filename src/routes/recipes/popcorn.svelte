@@ -26,6 +26,8 @@
 </style>
 
 <svelte:head>
+  <title>{recipe.title}</title>
+
   <style>
     :root {
       --body-bg: white;

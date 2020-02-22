@@ -126,10 +126,13 @@
     <tr>
       <td>Servings (split)</td>
       <td class="nowrap">
-        <input
-          type="number"
-          step="any"
-          bind:value={servings} />
+        <label>
+          <input
+            type="number"
+            step="any"
+            bind:value={servings} />
+          <span class="visuallyhidden">Change serving size</span>
+        </label>
       </td>
       <td class="Number">
         {toGrams(servingGrams)}
