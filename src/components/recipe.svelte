@@ -87,8 +87,17 @@
   </tbody>
   <tfoot>
     <tr>
+      <td>Totals</td>
+      <td>{toGrams(tally(ingredients, 'grams'))}</td>
+      <td>{toGrams(tally(ingredients, 'calories'))}</td>
+      <td>{toGrams(tally(ingredients, 'carbs'))}</td>
+      <td>{toGrams(tally(ingredients, 'fat'))}</td>
+      <td>{toGrams(tally(ingredients, 'protein'))}</td>
+      <td>{toGrams(tally(ingredients, 'fiber'))}</td>
+    </tr>
+    <tr>
       <td class="nowrap">
-        Servings: {toFixed(totalGrams / servingGrams)}
+        Per Serving ({toFixed(totalGrams / servingGrams)})
       </td>
       <td class="nowrap">
         <input

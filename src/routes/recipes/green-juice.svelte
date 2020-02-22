@@ -34,7 +34,7 @@
 
 <section>
   <div class="Content">
-    <h1>Green Juice</h1>
+    <h1>{recipe.title}</h1>
     <p>
       This recipe is our weekly ritual. Come every Sunday, we bring out the food
       processor and indiscriminately consume massive amounts of fiber.

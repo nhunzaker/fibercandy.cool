@@ -107,12 +107,12 @@ export const RECIPES = [
     ingredients: [
       {
         name: "Popcorn",
-        grams: 150,
-        calories: 516,
-        carbs: 110,
-        fat: 6.4,
-        protein: 16.5,
-        fiber: 19.5
+        grams: 140,
+        calories: 481.6,
+        carbs: 102.67,
+        fat: 5.97,
+        protein: 15.4,
+        fiber: 18.2
       },
       {
         name: "Coconut Oil - 2 TBS",

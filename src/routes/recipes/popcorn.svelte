@@ -34,7 +34,7 @@
 
 <section>
   <div class="Content">
-    <h1>Popcorn</h1>
+    <h1>{recipe.title}</h1>
     <p>This popcorn recipe is probably killing us, but we just can't stop. So much butter. So much salt. So much cumin.</p>
     <p>Don't stop us now.</p>
   </div>

@@ -51,8 +51,8 @@
     text-align: center;
   }
 
-  .Tagline u {
-    text-decoration-style: dashed;
+  .Tagline span {
+    border-bottom: 1px dashed;
   }
 </style>
 
@@ -67,9 +67,9 @@
       <span>y</span>
     </a>
     <span class="Tagline">
-      <u>Consistent</u>
+      <span>Consistent</span>
       recipes for
-      <u>consistent</u>
+      <span>consistent</span>
       results
     </span>
   </div>
