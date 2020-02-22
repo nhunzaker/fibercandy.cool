@@ -3,7 +3,7 @@
   export let recipe;
 
   $: ingredients = recipe.ingredients || [];
-  $: calories = toFixed(tally(ingredients, "calories") / recipe.servings, 1);
+  $: calories = toFixed(tally(ingredients, "calories") / recipe.servings);
   $: carbs = tally(ingredients, "carbs") / recipe.servings;
   $: fat = tally(ingredients, "fat") / recipe.servings;
   $: protein = tally(ingredients, "protein") / recipe.servings;
@@ -77,9 +77,8 @@
     <h2 class="Title">{recipe.title}</h2>
     <p class="Description">{recipe.description}</p>
     <footer class="Facts">
-      {calories} cal, {toGrams(carbs)} Carbs, {toGrams(fat)} Fat, {toGrams(protein)}
-      Protein,
-      <b>{toGrams(fiber)} Fiber</b>
+      {calories} cal / {toGrams(carbs)} carbs / {toGrams(fat)} fat / {toGrams(protein)}
+      protein / <b>{toGrams(fiber)} fiber</b>
     </footer>
   </div>
 </a>
