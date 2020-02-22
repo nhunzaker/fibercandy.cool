@@ -44,7 +44,7 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     color: inherit;
     display: block;
-    padding: 1rem 1.5rem 1.75rem;
+    padding: 1rem 1rem 1.75rem;
     position: relative;
     text-decoration: none;
     z-index: 1;
