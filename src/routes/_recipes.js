@@ -7,13 +7,13 @@ export const RECIPES = [
     description: "Our take on a favorite Green Kitchen Stories smoothie",
     ingredients: [
       {
-        name: "Almond Milk - 1.5 Cups",
-        grams: 360,
-        calories: 45,
-        carbs: 1.5,
-        fat: 3.75,
-        protein: 1.5,
-        fiber: 0.75
+        name: "Almond Milk - 1 cup",
+        grams: 240,
+        calories: 40,
+        carbs: 2,
+        fat: 3,
+        protein: 1,
+        fiber: 1
       },
       {
         name: "Chia Seeds - 2 TBS",
