@@ -117,7 +117,7 @@
       <td>Total</td>
       <td>-</td>
       <td class="Number">{toGrams(tally(ingredients, 'grams'))}</td>
-      <td class="Number">{toGrams(tally(ingredients, 'calories'))}</td>
+      <td class="Number">{toFixed(tally(ingredients, 'calories'))}</td>
       <td class="Number">{toGrams(tally(ingredients, 'carbs'))}</td>
       <td class="Number">{toGrams(tally(ingredients, 'fat'))}</td>
       <td class="Number">{toGrams(tally(ingredients, 'protein'))}</td>
@@ -129,7 +129,8 @@
         <label>
           <input
             type="number"
-            step="any"
+            step="0.5"
+            min="0.5"
             bind:value={servings} />
           <span class="visuallyhidden">Change serving size</span>
         </label>
@@ -137,7 +138,7 @@
       <td class="Number">
         {toGrams(servingGrams)}
       </td>
-      <td class="Number">{toGrams(servingsCalories)}</td>
+      <td class="Number">{toFixed(servingsCalories)}</td>
       <td class="Number">{toGrams(servingsCarbs)}</td>
       <td class="Number">{toGrams(servingsFat)}</td>
       <td class="Number">{toGrams(servingsProtein)}</td>
