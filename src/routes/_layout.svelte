@@ -12,7 +12,7 @@
 
   .Brand {
     background: var(--brand-background, transparent);
-    border-radius: 2px;
+    border-radius: 1px;
     box-shadow: var(--brand-shadow);
     padding: 16px 20px 20px;
     transition: 0.25s background;
