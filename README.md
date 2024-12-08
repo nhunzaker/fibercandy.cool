@@ -12,5 +12,4 @@ o8P  o8 8oPYo. .oPYo. oPYo. .oPYo. .oPYo. odYo. .oPYo8 o    o
 
 # fibercandy
 
-Our stupid food blog about nothing and everything.
-
+Our stupid food blog about fiber.

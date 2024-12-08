@@ -1,6 +1,6 @@
 <script>
-  import { RECIPES } from "./_recipes.js";
-  import { ADS } from "./_ads.js";
+  import { RECIPES } from "../_recipes.js";
+  import { ADS } from "../_ads.js";
 </script>
 
 <svelte:head>

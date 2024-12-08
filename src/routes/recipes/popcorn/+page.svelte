@@ -1,10 +1,9 @@
 <script>
-  import { RECIPES } from "../_recipes.js";
-  import Recipe from "../../components/recipe.svelte";
-  import HomeAd from "../../components/home-ad.svelte";
+  import { RECIPES } from "../../_recipes.js";
+  import Recipe from "../../../components/recipe.svelte";
+  import HomeAd from "../../../components/home-ad.svelte";
 
   const recipe = RECIPES.find(recipe => recipe.slug === "popcorn");
-  const ingredients = recipe ? recipe.ingredients : [];
 </script>
 
 <style>
